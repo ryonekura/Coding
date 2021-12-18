@@ -1,0 +1,23 @@
+function palindrome(str) {
+  //clean up the str that was passed in
+  let cleaner=str.replace(/['"]+/g, '');
+      cleaner=cleaner.replace(/[\W_]+/g,'');
+      cleaner=cleaner.toLowerCase();
+
+    //create variable, flipcleaner, that will hold cleaner flipped
+  var flipcleaner='';
+  
+  //define flipcleaner by reading cleaner backwards
+  for (let i=cleaner.length-1; i>=0; i--){
+      flipcleaner+=cleaner[i];
+  }
+
+  //check to see if cleaner is actually a palindrome.
+  if (cleaner==flipcleaner){
+  return true;
+  } else {
+    return false;
+  }
+}
+
+palindrome("eye");
