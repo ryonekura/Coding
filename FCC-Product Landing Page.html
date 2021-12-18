@@ -1,0 +1,122 @@
+<header id="header">
+  
+  <style>
+   #nav-bar{
+     position: fixed;  
+     background-color:  #034f84;
+     top: 0px;
+     width: 100%;
+         }
+    
+  .nav-link {
+    top: 0;
+  right: 0;
+  float: right;
+  text-align: right;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+    
+    .flex-container {
+  color: blue;
+  display: flex;
+  justify-content: space-between;
+  font-family:verdana;
+  background: silver;
+  flex-direction: column;
+  width: 20%;
+}
+    p, h1, nav, li{
+      font-family:verdana;}
+    
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+    
+    @media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+  
+  <nav id="nav-bar"  >
+  <p style="color:blue; font-size:45px;"><img src="https://static.vecteezy.com/system/resources/previews/000/620/814/original/goat-black-animals-vector-logo-and-symbol.jpg" alt="Goat logo borrow from static.vecteezy.com" width="70" height="60" id="header-image">
+    Benjy's Original Soap</p>
+
+  <a href="#contact" class="nav-link">Contact</a>
+  <a href="#how" class="nav-link">How It Is Made</a> 
+  <a href="#about" class="nav-link">About Me</a> 
+
+</nav>
+     
+</header>
+
+<body style="background-color:#1c87c9;">
+  <br><br><br><br><br><br><br><br><br><br>
+  <section id="how">
+    <h1>How It Is Made </h1>
+    <p>
+     My friends who produce milk are able to provide their owners with means of creating goat milk soap. I'm going to borrow information from the Free Reign Farm. Check out their <a href="https://www.freereignfarm.com/product/summer-night-walk/" target="_blank">website</a> if you would like to buy some!    
+    </p><br><br>
+    
+    <a href="https://www.freereignfarm.com/product/summer-night-walk/"><img src="https://www.freereignfarm.com/wp-content/uploads/2013/10/summernightwalk.jpg" alt="Photo of Summer Night Walk Lavendar Goat Milk Soap" width="600" height="600" title="Lavendar Goat Milk Soap from Free Reign Farm"></a>
+    
+    
+    </section>
+  
+<section id="about">
+  <h1>About Me</h1>
+  <p>Check out this short video that I got from youtube what my friends and I act, walk, and talk like.</p>
+  
+  <iframe width="647" height="394" src="https://www.youtube.com/embed/3NU33PXtf-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+  
+  </section>  
+
+  
+<section id="contact"> 
+  <h1>Contact</h1>
+  <p>
+      How you can get in touch with me:
+  </p>
+  
+  <div class="flex-container">
+  <div>Email: benjy.goat@emailaddress.com</div>
+  <div>Telephone: TBD</div>
+  <div>Address: In the Green Mountains</div>
+</div>
+
+  <br><br>
+  <form>
+  <label id="email-label" style="font-family:verdana">How can I email <em>YOU?</em> </label><br>
+<input id="email" type="text" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" value="Enter your Email" required> 
+<br><br>
+  <input type="submit" id="submit" onClick="myFunction()"/ >
+    <script>
+     function myFunction() {
+       window.location.href="https://www.freecodecamp.com/email-submit"; 
+     }
+   </script>
+  </form>
+  </section>
+  <br><br><br>
+</body>
+<br>
+<footer align="center">
+      Challenge by <a href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page" target="_blank">freeCodeCamp</a>. 
+    Coded by <a href="#">Reimi Yonekura</a>.
+        </footer>
